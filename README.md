@@ -27,9 +27,9 @@ Options can be passed using the `reporterOptions` field in gulp-mocha, or the `-
 
 name | description
 -----|-------------
-`cwd` | Location to use to generate relative file paths for tests
+`cwd` | Location to use to generate relative file paths for tests. Default is `process.cwd()`
 `output` | File path where you would like the sonar xml report to be saved. Default is `./coverage/sonar.xml`
-`delimiter` | Delimiter to use for names for nested tests
+`delimiter` | Delimiter to use to join names for nested tests. Default is `' '`
 `reporter` | Name of the reporter you would like to use for console output. Default is `list`
 `silent` | If `true`, disables console output
 `spaces` | Number of spaces to use when formatting xml output. Default is `4`
