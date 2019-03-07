@@ -155,7 +155,7 @@ function Sonar (runner, opts) {
 
         } catch(err) {
 
-            console.error('Sonar execution report failed to write:\n' + err.stack);
+            console.error('Sonar execution report failed to write: %s', err.stack);
 
         }
 
