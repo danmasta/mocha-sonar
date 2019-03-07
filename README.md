@@ -9,8 +9,7 @@ Features:
 * Customize output file path/ name
 
 ## About
-We needed the ability to generate xml reports for unit tests and import them into SonarQube. There are a few libraries out there to help with this ([xnuit-file](https://github.com/peerigon/xunit-file), [reporter-file](https://github.com/apipkin/reporter-file), and [mocha-sonar-generic-test-coverage](https://github.com/mageddo/mocha-sonar-generic-test-coverage)
-), but they all were either outdated, generated incompatible xml, or only logged xml to stdout.
+We needed the ability to generate xml reports for unit tests and import them into SonarQube. There are a few libraries out there to help with this ([xnuit-file](https://github.com/peerigon/xunit-file), [reporter-file](https://github.com/apipkin/reporter-file), and [mocha-sonar-generic-test-coverage](https://github.com/mageddo/mocha-sonar-generic-test-coverage)), but they all were either outdated, generated incompatible xml, or only logged xml to stdout.
 
 ## Usage
 Add mocha-sonar as a dependency for your app and install via npm
