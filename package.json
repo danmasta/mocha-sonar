@@ -1,0 +1,46 @@
+{
+  "name": "@danmasta/mocha-sonar",
+  "version": "0.0.1",
+  "author": "Daniel Smith <dannmasta@gmail.com>",
+  "description": "Mocha reporter for Sonarqube",
+  "keywords": [
+    "mocha",
+    "sonarqube",
+    "reporter",
+    "unit",
+    "test"
+  ],
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "test": "mocha tests",
+    "coverage": "nyc mocha tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/danmasta/mocha-sonar.git"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "eslint": "^5.6.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "gulp": "^4.0.0",
+    "nyc": "^13.0.1"
+  },
+  "engines": {
+    "npm": ">=3",
+    "node": ">=6"
+  },
+  "dependencies": {
+    "lodash": "^4.17.11",
+    "mkdirp": "^0.5.1",
+    "mocha": "^6.0.2",
+    "xml-js": "^1.6.11"
+  }
+}
