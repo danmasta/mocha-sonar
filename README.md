@@ -3,7 +3,7 @@ SonarQube XML reporter for Mocha
 
 Features:
 * Generate xml reports compatible with [SonarQube](https://docs.sonarqube.org/latest/analysis/generic-test/)
-* Ability to also output to stdout
+* Ability to also write to stdout
 * Ability to define custom reporter for stdout
 * Silent mode to disable output
 * Customize output file path/ name
