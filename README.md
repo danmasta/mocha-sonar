@@ -1,16 +1,16 @@
 # Mocha Sonar Reporter
-Sonar XML reporter for Mocha
+SonarQube XML reporter for Mocha
 
 Features:
-* Generate xml reports compatible with [SonarQube](https://docs.sonarqube.org/latest/analysis/generic-test/#header-2)
-* Ability to view console output without hacking stdout
+* Generate xml reports compatible with [SonarQube](https://docs.sonarqube.org/latest/analysis/generic-test/)
+* Ability to also output to stdout
+* Ability to define custom reporter for stdout
 * Silent mode to disable output
-* Ability to define custom reporter output
 * Customize output file path/ name
 
 ## About
 We needed the ability to generate xml reports for unit tests and import them into SonarQube. There are a few libraries out there to help with this ([xnuit-file](https://github.com/peerigon/xunit-file), [reporter-file](https://github.com/apipkin/reporter-file), and [mocha-sonar-generic-test-coverage](https://github.com/mageddo/mocha-sonar-generic-test-coverage)
-), but they all were either outdated, generated incompatible xml, or logged only to stdout and attempted to use hacks to gather the output.
+), but they all were either outdated, generated incompatible xml, or only logged xml to stdout.
 
 ## Usage
 Add mocha-sonar as a dependency for your app and install via npm
@@ -64,7 +64,7 @@ gulp.task('coverage', ['coverage:before'], () => {
             reporter: '@danmasta/mocha-sonar',
             reporterOptions: {
                 reporter: 'list',
-                reporter_file: './coverage/sonar.xml'
+                output: './coverage/sonar.xml'
             }
         }))
         .pipe(istanbul.writeReports({
