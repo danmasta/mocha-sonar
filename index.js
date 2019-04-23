@@ -63,7 +63,7 @@ function toXml (files) {
     let res = {
         _declaration: {
             _attributes: {
-                version: 1.0,
+                version: '1.0',
                 encoding: 'utf-8'
             }
         },
