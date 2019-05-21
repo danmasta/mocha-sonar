@@ -93,7 +93,7 @@ function fullTitle (test, delimiter) {
         parent = parent.parent;
     }
 
-    return _.join(name, delimiter);
+    return _.escape(_.join(name, delimiter));
 
 }
 
