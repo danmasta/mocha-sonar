@@ -1,8 +1,6 @@
-const path = require('path');
 const chai = require('chai');
 
-beforeEach(function () {
-    global.path = path;
+beforeEach(() => {
     global.assert = chai.assert;
     global.expect = chai.expect;
     global.should = chai.should();
