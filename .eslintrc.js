@@ -7,8 +7,7 @@ module.exports = {
     "rules": {
         "indent": [
             "error",
-            4,
-            { "SwitchCase": 1 }
+            4
         ],
         "linebreak-style": [
             "error",
@@ -23,13 +22,13 @@ module.exports = {
             "always"
         ],
         "no-console": [
-            "warn"
-        ],
-        "no-undef": [
             "off"
         ],
-        "no-unused-vars": [
-            1
-        ]
+        "no-undef": "off",
+        "space-before-function-paren": ["error", {
+            "anonymous": "ignore",
+            "named": "always",
+            "asyncArrow": "always"
+        }],
     }
 };
