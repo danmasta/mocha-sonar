@@ -1,6 +1,6 @@
 {
   "name": "@danmasta/mocha-sonar",
-  "version": "0.0.6",
+  "version": "1.0.0",
   "author": "Daniel Smith <dannmasta@gmail.com>",
   "description": "Mocha reporter for Sonarqube",
   "license": "MIT",
