@@ -67,7 +67,7 @@ class Sonar extends Base {
 
         let file = test.file.slice(this.opts.cwd.length + 1);
 
-        if (!test.state && test.pending) {
+        if (test.isPending()) {
             test.state = 'skipped';
         }
 
