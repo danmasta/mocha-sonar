@@ -16,32 +16,30 @@
     "index.js"
   ],
   "scripts": {
-    "test": "mocha -R index tests",
-    "coverage": "nyc --reporter=lcov mocha -R index tests"
+    "test": "./node_modules/.bin/mocha -R index tests",
+    "coverage": "./node_modules/.bin/nyc --reporter=lcov ./node_modules/.bin/mocha -R index tests"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/danmasta/mocha-sonar.git"
-  },
-  "devDependencies": {
-    "chai": "^4.2.0",
-    "eslint": "^7.6.0",
-    "eslint-config-standard": "^14.1.1",
-    "eslint-plugin-import": "^2.22.0",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-standard": "^4.0.1",
-    "gulp": "^4.0.2",
-    "nyc": "^15.1.0"
   },
   "engines": {
     "npm": ">=3",
     "node": ">=6"
   },
   "dependencies": {
-    "lodash": "^4.17.19",
-    "mkdirp": "^1.0.4",
-    "mocha": "^8.1.0",
+    "lodash": "^4.17.21",
+    "mkdirp": "^3.0.1",
+    "mocha": "^10.2.0",
     "xml-js": "^1.6.11"
+  },
+  "devDependencies": {
+    "chai": "^5.0.0",
+    "eslint": "^8.56.0",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "nyc": "^15.1.0"
   }
 }
